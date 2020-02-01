@@ -5,6 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "node server.js && cd front-end && npm run dev "
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
