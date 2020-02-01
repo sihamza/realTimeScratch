@@ -5,7 +5,7 @@ var randomstring = require("randomstring");
 var server = require('http').Server(app);
 var io = require('socket.io')(server);
 var moment = require('moment')
-
+const port = process.env.PORT ;
 app.use(cors())
 
 
@@ -44,4 +44,4 @@ io.on("connection", function(socket){
 });
 
 
-server.listen(8000);
+server.listen(port);
