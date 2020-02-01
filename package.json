@@ -1,0 +1,31 @@
+{
+  "name": "anonymous-chat",
+  "version": "1.0.0",
+  "description": "real time chat",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js && cd front-end && npm run dev "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sihamza/realTimeScratch.git"
+  },
+  "keywords": [
+    "socketio",
+    "express",
+    "nuxt"
+  ],
+  "author": "jouini hamza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sihamza/realTimeScratch/issues"
+  },
+  "homepage": "https://github.com/sihamza/realTimeScratch#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "moment": "^2.24.0",
+    "mongoose": "^5.8.9",
+    "randomstring": "^1.1.5",
+    "socket.io": "^2.3.0"
+  }
+}
