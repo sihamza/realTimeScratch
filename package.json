@@ -4,7 +4,7 @@
   "description": "real time chat",
   "main": "server.js",
   "scripts": {
-    "test": "node server.js && cd front-end && npm run dev " ,
+    "test": "node server.js && cd front-end && npm run dev ",
     "start": "node server.js"
   },
   "repository": {
@@ -23,11 +23,14 @@
   },
   "homepage": "https://github.com/sihamza/realTimeScratch#readme",
   "dependencies": {
+    "compression": "^1.7.4",
+    "connect-history-api-fallback": "^1.6.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "moment": "^2.24.0",
     "mongoose": "^5.8.9",
     "randomstring": "^1.1.5",
+    "serve-static": "^1.14.1",
     "socket.io": "^2.3.0"
   }
 }
