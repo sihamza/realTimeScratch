@@ -10,7 +10,6 @@ const history = require('connect-history-api-fallback');
 var compression = require('compression')
 var serveStatic = require('serve-static');
 
-app.use("/", serveStatic("./front-end/dist"));
 
 app.use(cors())
 app.use(compression())
@@ -18,8 +17,6 @@ app.use(history({
   disableDotRule: true,
   verbose: true
 }));
-
-app.get("/", serveStatic("./front-end/dist"));
 
 app.get("/create", ( req , res ) => {
   let room = randomstring.generate(7)
