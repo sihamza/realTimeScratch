@@ -5,7 +5,7 @@ var randomstring = require("randomstring");
 var server = require('http').Server(app);
 var io = require('socket.io')(server);
 var moment = require('moment')
-const port = process.env.PORT  ;
+const port = process.env.PORT   ;
 const history = require('connect-history-api-fallback');
 var compression = require('compression')
 var serveStatic = require('serve-static');
@@ -19,7 +19,7 @@ app.use(history({
   verbose: true
 }));
 
-app.use("/", serveStatic("./front-end/dist"));
+app.get("/", serveStatic("./front-end/dist"));
 
 app.get("/create", ( req , res ) => {
   let room = randomstring.generate(7)
